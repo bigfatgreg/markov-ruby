@@ -35,7 +35,7 @@ This may take a while. If the file is large you will want to break it up.
 
 Generate some text:
 
-	> generator = @g = Markov::Generate.new("db_name", { table: "table_name", length: 20 })
+	> generator = Markov::Generate.new("db_name", { table: "table_name", length: 20 })
 	> generator.text
 	
 	=> "And comfortably unto Gideon, having two or one, let nothing of water of dogs of Israel, and sorrow of"
