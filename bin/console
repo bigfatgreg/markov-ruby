@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+lib = File.expand_path("../../lib", __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+require "markov"
+require "irb"
+
+@source = "../test/fixtures/text_sample.txt"
+@dbname = "markov_test"
+@db = Markov::DB.new(dbname: @dbname, chunk: 4)
+@g = Markov::Generate.new("markov_test")
+
+IRB.start
