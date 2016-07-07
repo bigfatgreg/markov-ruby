@@ -1,3 +1,4 @@
 *.DS*
 .byebug_history
 Gemfile.lock
+*.gem
